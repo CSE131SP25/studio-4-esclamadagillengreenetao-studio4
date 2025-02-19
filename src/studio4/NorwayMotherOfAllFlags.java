@@ -1,5 +1,7 @@
 package studio4;
 
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
@@ -21,15 +23,35 @@ public class NorwayMotherOfAllFlags {
 		StdDraw.filledRectangle(11, 8, 11, 1);
 		StdDraw.filledRectangle(8, 8, 1, 8);
 	}
+	
+	public static void jollyMother() {
+		StdDraw.clear();
+		StdDraw.setPenColor(0, 0, 200);
+		StdDraw.setPenRadius(0.2);
+		StdDraw.line(0, 0, 22, 16);
+		StdDraw.setPenColor(0, 200, 0);
+		StdDraw.filledEllipse(2, 8, 5, 7);
+		StdDraw.setPenColor(Color.white);
+		StdDraw.filledRectangle(3.3, 5, 3.7, 3.5);
+		StdDraw.picture(2, 4, "/Users/jasonesc/git/studio-4-esclamadagillengreenetao-studio4/resources/jollibee-logo-png-transparent.png", 5, 7);
+	}
 
 	public static void norway() {
 		StdDraw.setXscale(0, 22);
 		StdDraw.setYscale(0, 16);
 		mother();
 	}
+	
+	public static void jollyland() {
+		StdDraw.setXscale(0,22);
+		StdDraw.setYscale(0,16);
+		
+	}
 
 	public static void france() {
-		
+		StdDraw.setXscale(0,22);
+		StdDraw.setYscale(0,16);
+		jollyMother();
 		// TODO
 	}
 
